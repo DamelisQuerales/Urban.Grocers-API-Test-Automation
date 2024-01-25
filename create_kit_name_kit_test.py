@@ -3,7 +3,7 @@ import data
 
 
 def positive_assert(kit_body):
-    # El cuerpo de la solicitud actualizada se guarda en la variable user_body
+    # El cuerpo de la solicitud actualizada se guarda en la variable kit_body
     kit_body = kit_body
     # El resultado de la solicitud para crear un nuevo kit se guarda en la variable kit_response
     kit_response = sender_stand_request.post_new_client_kit(kit_body)
