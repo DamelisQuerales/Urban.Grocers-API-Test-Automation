@@ -1,12 +1,9 @@
-# Proyecto 6
-
 ## Tabla de contenidos
-
-1. [General Info](#general-info)
-2. [Technologías](#technologies)
-3. [Instalación](#installation)
-4. [Metodología](#collaboration)
-5. [Conclusión](#faqs)
+1. [Información General]
+2. [Technologías]
+3. [Instalación]
+4. [Metodología]
+5. [Conclusión]
 ### Información general
 ***
 Automatización de pruebas API de Urban.Grocers desde la lista de comprobación para el campo "name".  Las pruebas automatizadas se basan en la lista de comprobación para la creación de un kit de productos y se incluyen 9 pruebas positivas y negativas.
@@ -20,6 +17,7 @@ Lista de tecnologías utilizadas en este proyecto:
 * [Paycharm](https://example.com): Version 2023.3.2 
 * [Pytest](https://example.com): Version 7.1.0
 * [Librería Request](https://example.com): Version 1234
+* ApiDoc como fuente de la documentación utilizada
 ## Instalación
 ***
 
@@ -48,7 +46,13 @@ Información adicional: se trabajo de manera local con PyCharm
 
 ### Conclusión
 ***
-Las pruebas automatizadas de API de Urban.Grocers son una herramienta valiosa que puede ayudar a garantizar que la API funcione correctamente. Con un poco de esfuerzo, puede empezar a automatizar las pruebas de su API de Urban.Grocers.
+Las pruebas automatizadas de API de Urban.Grocers son una herramienta valiosa que puede ayudar a garantizar que la API funcione correctamente. 
 
-Códigos de respuesta:
-| 200 | 201 | 400 |
+Los resultados obtenidos:
+5 test de pruebas positivas dieron como PASSED [100%]
+4 test de pruebas negativas FAILED [100%], dando como resultado códigos de respuesta diferentes a los esperados:
+
+test kit_body_3 FAILED [100%] = Expected :400 | Obtenied:201
+test kit_body_4 FAILED [100%] = Expected :400 | Obtenied:201
+test kit_body_8 FAILED [100%] = Expected :400 | Obtenied:500
+test kit_body_9 FAILED [100%] = Expected :400 | Obtenied:201
