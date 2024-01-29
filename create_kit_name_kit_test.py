@@ -1,6 +1,8 @@
 import sender_stand_request
 import data
 
+# Comprueba que la creación de un kit con el nombre especificado tiene éxito
+
 
 def positive_assert(kit_body):
     # El cuerpo de la solicitud actualizada se guarda en la variable kit_body
@@ -13,8 +15,10 @@ def positive_assert(kit_body):
     # Comprueba que el campo authToken está en la respuesta y contiene un valor
     assert kit_response.json()["name"]
 
+# Pruebas que comprueban que la creación de un kit con el nombre especificado tiene éxito.
 
 # Prueba 1. El número permitido de caracteres (1)
+
 
 def test_create_kit_1_letter_in_name_get_success_response():
     kit_body = data.Kitname.kit_body_1
@@ -47,6 +51,8 @@ def test_create_kit_has_space_in_name_get_error_response():
 def test_create_kit_has_number_in_name_get_error_response():
     kit_body = data.Kitname.kit_body_7
     positive_assert(kit_body)
+
+#  Comprueba que la creación de un kit con el nombre especificado genera un error 400
 
 
 def negative_assert_code_400(kit_body):
