@@ -52,7 +52,4 @@ Los resultados obtenidos:
 5 test de pruebas positivas dieron como PASSED [100%]
 4 test de pruebas negativas FAILED [100%], dando como resultado códigos de respuesta diferentes a los esperados:
 
-test kit_body_3 FAILED [100%] = Expected :400 | Obtenied:201
-test kit_body_4 FAILED [100%] = Expected :400 | Obtenied:201
-test kit_body_8 FAILED [100%] = Expected :400 | Obtenied:500
-test kit_body_9 FAILED [100%] = Expected :400 | Obtenied:201
+test kit_body_3, 4, 8 y 9 FAILED [100%] = Expected :400 | Obtenied:201
